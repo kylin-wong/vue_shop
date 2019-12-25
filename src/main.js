@@ -8,6 +8,7 @@ import './assets/css/global.css'
 // 导入字体图标
 import './assets/fonts/iconfont.css'
 import Mbx from './components/Mbx/Mbx.vue'
+import TreeTable from 'vue-table-with-tree-grid'
 
 // 配置axios
 import axios from 'axios'
@@ -27,6 +28,7 @@ Vue.prototype.$http = axios
 
 Vue.config.productionTip = false
 
+Vue.component('tree-table', TreeTable)
 new Vue({
   router,
   render: h => h(App)
