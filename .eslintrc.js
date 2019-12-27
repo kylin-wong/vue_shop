@@ -17,7 +17,8 @@ module.exports = {
     'no-undef': 0,
     'no-trailing-spaces': 0,
     'vue/no-parsing-error': 0,
-    'no-unused-vars': 0
+    'no-unused-vars': 0,
+    'camelcase': 0
   },
   parserOptions: {
     parser: 'babel-eslint'

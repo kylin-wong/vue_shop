@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- 面包屑导航 -->
-    <mbx nav1="用户管理" nav2="用户列表"></mbx>
+    <mbx nav1="商品管理" nav2="商品列表"></mbx>
 
     <!-- 卡片视图区域 -->
     <el-card>
@@ -53,7 +53,7 @@
         <el-form-item label="父级分类:">
           <!-- options 用来指定数据源 -->
           <!-- props 用来指定配置对象 -->
-          <el-cascader expand-trigger="hover" :options="parentCateList" :props="cascaderProps" v-model="selectedKeys" @change="parentCateChanged" clearable change-on-select> </el-cascader>
+          <el-cascader :options="parentCateList" :props="cascaderProps" v-model="selectedKeys" @change="parentCateChanged" clearable> </el-cascader>
         </el-form-item>
       </el-form>
       <span slot="footer" class="dialog-footer">
@@ -124,6 +124,8 @@ export default {
       parentCateList: [],
       // 指定级联选择器的 配置对象
       cascaderProps: {
+        expandTrigger: 'hover',
+        checkStrictly: false,
         value: 'cat_id',
         label: 'cat_name',
         children: 'children'
