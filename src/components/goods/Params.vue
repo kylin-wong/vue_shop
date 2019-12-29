@@ -1,6 +1,6 @@
 <template>
   <div>
-    <mbx nav1="商品管理" nav2="参数列表"></mbx>
+    <mbx nav1="商品管理" nav2="分类参数"></mbx>
 
     <!-- 视图卡片  -->
     <el-card>

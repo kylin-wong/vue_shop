@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- 面包屑导航 -->
-    <mbx nav1="商品管理" nav2="商品列表"></mbx>
+    <mbx nav1="商品管理" nav2="商品分类"></mbx>
 
     <!-- 卡片视图区域 -->
     <el-card>
